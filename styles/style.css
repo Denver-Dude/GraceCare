@@ -1,0 +1,50 @@
+/* Main Theme Colors */
+:root {
+  --dark-blue: #1C3144;
+  --royal-blue: #004C8C;
+  --white: #ffffff;
+}
+
+/* Backgrounds */
+header.hero {
+  background-color: var(--dark-blue); /* fallback if image fails */
+}
+header.hero .overlay {
+  background-color: rgba(28, 49, 68, 0.6); /* dark blue overlay */
+}
+.navbar {
+  background-color: rgba(28, 49, 68, 0.8);
+}
+#about {
+  background-color: var(--dark-blue);
+}
+#services {
+  background-color: var(--royal-blue);
+}
+footer {
+  background-color: var(--dark-blue);
+}
+footer .social-icons a:hover {
+  color: var(--royal-blue);
+}
+
+/* Text */
+.text-primary {
+  color: var(--royal-blue) !important;
+}
+.btn-primary {
+  background-color: var(--royal-blue);
+  border-color: var(--royal-blue);
+}
+.btn-primary:hover {
+  background-color: #003566;
+  border-color: #003566;
+}
+
+/* Cards */
+#services .bg-primary {
+  background-color: var(--royal-blue) !important;
+}
+#services .bg-primary:hover {
+  background-color: #003566 !important;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GraceCare Access</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(to right, #e4f9f2, #d0f1e7);
+      color: #333;
+    }
+    
+
+    #loginContainer {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 320px;
+    }
+
+    #loginContainer h2 {
+      margin-bottom: 20px;
+      color: #28a745;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #errorMessage {
+      color: red;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loginContainer">
+    <img src="images\icon of logo only.png" width="40%">
+    <h2>GraceCare Access</h2>
+    <input type="email" id="emailInput" placeholder="Enter Email" required />
+    <input type="password" id="passwordInput" placeholder="Enter Password" required />
+    <button onclick="checkLogin()">Submit</button>
+    <p id="errorMessage"></p>
+  </div>
+
+  <script>
+    function checkLogin() {
+      const email = document.getElementById("emailInput").value.trim();
+      const password = document.getElementById("passwordInput").value;
+      const errorMessage = document.getElementById("errorMessage");
+
+      const validEmail = "me@test.com";
+      const validPassword = "123";
+
+      if (email === validEmail && password === validPassword) {
+        window.location.href = "dashboard/dashboard.html"; // Change to your destination
+      } else {
+        errorMessage.textContent = "Invalid email or password. Please try again.";
+      }
+    }
+  </script>
+
+</body>
+</html>

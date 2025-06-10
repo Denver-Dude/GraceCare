@@ -1,0 +1,27 @@
+
+.sidebar {
+  background-color: #1E3245;
+  color: white;
+  min-height: 100vh;
+}
+
+.sidebar .nav-link.active {
+  background-color: black;
+  color: white;
+}
+
+.logo-placeholder {
+  background-color: #004383;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Customizing "Add User" button */
+.btn-primary.add-user {
+  background-color: #004383;
+  border: none;
+}
+
+.btn-primary.add-user:hover {
+  background-color: #0061b2;
+}
