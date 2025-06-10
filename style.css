@@ -1,0 +1,59 @@
+/* Using your palette */
+:root {
+  --deep-green: #388e75;
+  --medium-green: #67a96c;
+  --light-green: #91c26e;
+  --pale-green: #b3e9b2;
+  --very-light: #f1f5d1;
+}
+
+/* Fonts */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+
+/* Hero section */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Makes it readable on any image */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.95rem;
+  }
+}
+
+/* About section */
+.about-section {
+  background-color: var(--medium-green);
+}
+
+/* Services */
+.service-section {
+  background-color: var(--pale-green);
+}
+.service-card {
+  background-color: var(--deep-green);
+  color: white;
+  transition: 0.3s;
+}
+.service-card:hover {
+  background-color: var(--medium-green);
+}
+
+/* Footer */
+footer {
+  background-color: var(--deep-green);
+}
